@@ -207,6 +207,10 @@ h6 {
 	color: var(--foreground)
 }
 
+body {
+	background: #191719;
+}
+
 @layer base {
 	* {
 		@apply border-border outline-ring/50;

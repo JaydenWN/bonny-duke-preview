@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-
+import { Facebook, Instagram } from "lucide-react";
 import { Marquee } from "@/components/ui/marquee";
 
 const imagesDefault = [
@@ -32,6 +32,15 @@ const Gallery29 = ({ className, images = imagesDefault, logoImage }: Gallery29Pr
           <p className="text-4xl text-white lg:text-6xl">
             Coastal Apparel. Coming Soon.
           </p>
+       <div className="mx-auto flex gap-3">
+		    <a href="https://www.instagram.com/bonnyduke/" className="flex gap-3 w-fit mx-auto bg-[#3852A3] text-white border border-black p-1 rounded">
+          <Instagram />
+		    </a>
+        <a href="https://www.facebook.com/bonnydukeapparel/" className="flex gap-3 w-fit mx-auto bg-[#3852A3] text-white border border-black p-1 rounded">
+          <Facebook/>
+		    </a>
+       </div>
+
         </div>
         <div className="relative">
           <Marquee repeat={2} className="p-0 opacity-80 [--duration:60s]">
@@ -45,6 +54,7 @@ const Gallery29 = ({ className, images = imagesDefault, logoImage }: Gallery29Pr
             ))}
           </Marquee>
         </div>
+       
         {/* Vintage film overlay */}
 <div className="pointer-events-none absolute inset-0 overflow-hidden">
   {/* Vignette (dark edges) */}
