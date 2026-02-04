@@ -1,0 +1,53 @@
+---
+import { getImage } from "astro:assets";
+import AboutHeroImage from "../assets/blog-placeholder-about.jpg";
+import Layout from "../layouts/BaseLayout.astro";
+import LandingHero from "@/components/landing-hero";
+import LandingServices from "@/components/landing-services";
+import LandingWhy from "@/components/landing-why";
+import LandingTestimonials from "@/components/landing-testimonials";
+import LandingFAQ from "@/components/landing-faq";
+import LandingContact from "@/components/landing-contact";
+
+import { BadgeCheck, Cog, Home, MessagesSquareIcon, Users } from "lucide-react";
+import LandingProcess from "@/components/landing-process";
+import { Gallery29 } from "@/components/gallery29";
+
+import image1 from "@images/1.JPG";
+const image1opt = await getImage({ src: image1, format: "webp" });
+
+import image2 from "@images/2.JPG";
+const image2opt = await getImage({ src: image2, format: "webp" });
+
+import image3 from "@images/3.JPG";
+const image3opt = await getImage({ src: image3, format: "webp" });
+
+import image4 from "@images/4.JPG";
+const image4opt = await getImage({ src: image4, format: "webp" });
+
+import image5 from "@images/5.JPG";
+const image5opt = await getImage({ src: image5, format: "webp" });
+
+import image6 from "@images/main.JPG";
+const image6opt = await getImage({ src: image6, format: "webp" });
+
+import logoImage from "@images/logo.png";
+const logoImageOpt = await getImage({ src: logoImage, format: "webp" });
+---
+
+<Layout
+	title="Free Website Demo | Home"
+	description="This website is a demonstration of the free website design we offer to our customers. It shows the layout, structure, and features included, so you can see exactly what your business website could look like before getting started."
+>
+	<Gallery29
+		images={[
+			image1opt.src,
+			image2opt.src,
+			image3opt.src,
+			image4opt.src,
+			image5opt.src,
+			image6opt.src,
+		]}
+		logoImage={logoImageOpt.src}
+	/>
+</Layout>
