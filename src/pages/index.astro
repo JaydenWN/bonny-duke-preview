@@ -34,6 +34,7 @@ const image6opt = await getImage({ src: image6, format: "webp" });
 import logoImage from "@images/logo.png";
 import { Instagram } from "lucide-react";
 const logoImageOpt = await getImage({ src: logoImage, format: "webp" });
+import TextImage from "@images/textimage.png";
 ---
 
 <Layout
@@ -50,5 +51,6 @@ const logoImageOpt = await getImage({ src: logoImage, format: "webp" });
 			image6opt.src,
 		]}
 		logoImage={logoImageOpt.src}
+		textImage={TextImage.src}
 	/>
 </Layout>

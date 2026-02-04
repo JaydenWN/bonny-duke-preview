@@ -16,9 +16,10 @@ interface Gallery29Props {
   className?: string;
   images?: string[];
   logoImage: string;
+  textImage: string;
 }
 
-const Gallery29 = ({ className, images = imagesDefault, logoImage }: Gallery29Props) => {
+const Gallery29 = ({ className, images = imagesDefault, logoImage, textImage }: Gallery29Props) => {
   return (
     <section
       className={cn(
@@ -29,9 +30,8 @@ const Gallery29 = ({ className, images = imagesDefault, logoImage }: Gallery29Pr
       <div>
         <div className="container mx-auto mb-12 flex flex-col gap-4 text-center">
           <img src={logoImage} alt="bonnyduke logo" className="w-80 md:w-100 mx-auto"/>
-          <p className="text-4xl text-white lg:text-6xl">
-            Coastal Apparel. Coming Soon.
-          </p>
+          <img src={textImage} alt="bonnyduke logo" className="w-80 md:w-100 mx-auto"/>
+          
        <div className="mx-auto flex gap-3">
 		    <a href="https://www.instagram.com/bonnyduke/" className="flex gap-3 w-fit mx-auto bg-[#3852A3] text-white border border-black p-1 rounded">
           <Instagram />
