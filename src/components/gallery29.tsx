@@ -29,7 +29,7 @@ const Gallery29 = ({ className, images = imagesDefault, logoImage, textImage }: 
     >
       <div>
         <div className="container mx-auto mb-12 flex flex-col gap-4 text-center">
-          <img src={logoImage} alt="bonnyduke logo" className="w-80 md:w-100 mx-auto"/>
+          {/* <img src={logoImage} alt="bonnyduke logo" className="w-80 md:w-100 mx-auto"/> */}
           <img src={textImage} alt="bonnyduke logo" className="w-80 md:w-100 mx-auto"/>
           
        <div className="mx-auto flex gap-3">
