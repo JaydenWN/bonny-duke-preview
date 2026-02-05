@@ -31,7 +31,7 @@ const image5opt = await getImage({ src: image5, format: "webp" });
 import image6 from "@images/main.JPG";
 const image6opt = await getImage({ src: image6, format: "webp" });
 
-import logoImage from "@images/logo-wood.png";
+import logoImage from "@images/logo.png";
 import { Instagram } from "lucide-react";
 const logoImageOpt = await getImage({ src: logoImage, format: "webp" });
 import TextImage from "@images/textimage.png";
@@ -41,8 +41,6 @@ import TextImage from "@images/textimage.png";
 	title="BonnyDuke | Coming Soon"
 	description="This website is a demonstration of the free website design we offer to our customers. It shows the layout, structure, and features included, so you can see exactly what your business website could look like before getting started."
 >
-	<img src={logoImageOpt.src} alt="bonnyduke logo" class="mx-auto" />
-
 	<Gallery29
 		images={[
 			image1opt.src,

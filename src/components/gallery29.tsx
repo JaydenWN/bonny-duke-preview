@@ -23,13 +23,13 @@ const Gallery29 = ({ className, images = imagesDefault, logoImage, textImage }: 
   return (
     <section
       className={cn(
-        "dark relative overflow-hidden bg-[#191719] py-16",
+        "dark relative overflow-hidden  py-16",
         className,
       )}
     >
       <div>
         <div className="container mx-auto mb-12 flex flex-col gap-4 text-center">
-          {/* <img src={logoImage} alt="bonnyduke logo" className="w-80 md:w-100 mx-auto"/> */}
+          <img src={logoImage} alt="bonnyduke logo" className="w-80 md:w-100 mx-auto"/>
           <img src={textImage} alt="bonnyduke logo" className="w-80 md:w-100 mx-auto"/>
           
        <div className="mx-auto flex gap-3">
@@ -43,13 +43,13 @@ const Gallery29 = ({ className, images = imagesDefault, logoImage, textImage }: 
 
         </div>
         <div className="relative">
-          <Marquee repeat={2} className="p-0 opacity-80 [--duration:60s]">
+          <Marquee repeat={2} className="p-0[--duration:60s]">
             {images.map((image, idx) => (
               <img
                 key={idx}
                 src={image}
                 alt="gallery"
-                className="aspect-[2/3] max-w-96 p-3 border border-white object-cover"
+                className="aspect-[2/3] max-w-96  p-3 border border-white object-cover"
               />
             ))}
           </Marquee>
