@@ -49,7 +49,7 @@ const Gallery29 = ({ className, images = imagesDefault, logoImage, textImage }: 
                 key={idx}
                 src={image}
                 alt="gallery"
-                className="aspect-[2/3] max-w-96  p-3 border border-white object-cover"
+                className="aspect-[2/3] max-w-96  p-3 object-cover"
               />
             ))}
           </Marquee>
