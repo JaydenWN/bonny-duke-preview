@@ -33,14 +33,14 @@ const Gallery29 = ({ className, images = imagesDefault, logoImage, textImage }: 
           <img src={textImage} alt="bonnyduke logo" className="w-80 md:w-100 mx-auto"/>
           
        <div className="mx-auto flex gap-3">
-		    <a href="https://www.instagram.com/bonnyduke/" className="flex gap-3 w-fit mx-auto bg-[#3852A3] text-white border border-black p-1 rounded">
-          <Instagram />
+		    <a href="https://www.instagram.com/bonnyduke/" className="flex gap-3 w-fit mx-auto bg-[#3852A3] text-white border border-black p-3 rounded ">
+          <Instagram  className=""/>
 		    </a>
-        <a href="https://www.facebook.com/bonnydukeapparel/" className="flex gap-3 w-fit mx-auto bg-[#3852A3] text-white border border-black p-1 rounded">
-          <Facebook/>
+        <a href="https://www.facebook.com/bonnydukeapparel/" className="flex gap-3 w-fit mx-auto bg-[#3852A3] text-white border border-black p-3 rounded ">
+          <Facebook className=""/>
 		    </a>
        </div>
-
+        <p className="text-white text-3xl"><a href="mailto:Sales@bonnyduke.com.au">Sales@bonnyduke.com.au</a> for enquiries and collaborations</p>
         </div>
         <div className="relative">
           <Marquee repeat={2} className="p-0[--duration:60s]">
